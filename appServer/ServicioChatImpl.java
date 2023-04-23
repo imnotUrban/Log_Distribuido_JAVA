@@ -2,6 +2,9 @@ import java.util.*;
 import java.rmi.*;
 import java.rmi.server.*;
 import java.io.*;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
 
 class ServicioChatImpl implements ServicioChat {
     List<Cliente> l;
@@ -19,9 +22,16 @@ class ServicioChatImpl implements ServicioChat {
         for (Cliente c: l) 
 	    if (!c.equals(esc))
                 c.notificacion(apodo, m);
-                String ruta ="logCentralizado.txt";
                 //System.out.println("Se envio algo: "+m+" de: "+apodo);
                 try {
+
+                    //Sacamos la fecha y hora de la operación
+                    LocalDateTime fechaHoraActual_1 = LocalDateTime.now();
+                    DateTimeFormatter formato_1 = DateTimeFormatter.ofPattern("dd-MM-yy';'HH:mm:ss");
+                    String fechaHoraActualStr_1 = fechaHoraActual_1.format(formato_1);
+
+
+
                     // Abre el archivo "logMaster.txt" para lectura
                     File archivo = new File("logMaster.txt");
                     FileReader fr = new FileReader(archivo);
@@ -44,7 +54,7 @@ class ServicioChatImpl implements ServicioChat {
                     BufferedWriter bw = new BufferedWriter(fw);
                     
                     // Agrega la peticion del nodox al inicio del archivo
-                    bw.write(m+"\n");
+                    bw.write(m+";"+apodo+";"+fechaHoraActualStr_1+"\n");
                     bw.write(contenido.toString());
                     
                     // Cierra el archivo de escritura

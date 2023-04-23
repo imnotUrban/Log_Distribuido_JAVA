@@ -75,6 +75,7 @@ class ClienteChat {
                     String fechaHoraActualStr_1 = fechaHoraActual_1.format(formato_1);
                     String string_envio = nCorrelativo+";"+fechaHoraActualStr_1+";"+apodo+";"+msg;
                     System.out.println(string_envio);
+                    nCorrelativo=nCorrelativo+1;
                     /**
                      * Re Escribe en el archivo
                      */

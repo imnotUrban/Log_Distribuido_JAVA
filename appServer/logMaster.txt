@@ -1,7 +1,8 @@
- Se ha cerrado el nodo: Cliente1 a las: 22-04-23;21:17:28
-1;22-04-23;21:17:27;Cliente1;cerro el anterior, yo tmb cerrare
- Se ha cerrado el nodo: Cliente2 a las: 22-04-23;21:17:17
-1;22-04-23;21:17:15;Cliente2;otra sentencia sql
-1;22-04-23;21:17:07;Cliente1;Select * from table 1
-Inicio de operacion;Cliente2;22-04-23;21:16:56
-Inicio de operacion;Cliente1;22-04-23;21:16:52
+ Se ha cerrado el nodo: Cliente2 a las: 22-04-23;22:44:13;Cliente2;22-04-23;22:44:13
+ Se ha cerrado el nodo: Cliente1 a las: 22-04-23;22:44:06;Cliente1;22-04-23;22:44:06
+2;22-04-23;22:43:59;Cliente2;Sami>Tobi;Cliente2;22-04-23;22:43:59
+2;22-04-23;22:43:54;Cliente1;Sami>porot;Cliente1;22-04-23;22:43:54
+1;22-04-23;22:43:46;Cliente2;Select * from tobi;Cliente2;22-04-23;22:43:46
+1;22-04-23;22:43:33;Cliente1;Select * from poroto;Cliente1;22-04-23;22:43:33
+Inicio de operacion;Cliente2;22-04-23;22:43:10;Cliente2;22-04-23;22:43:10
+Inicio de operacion;Cliente1;22-04-23;22:42:51;Cliente1;22-04-23;22:42:52

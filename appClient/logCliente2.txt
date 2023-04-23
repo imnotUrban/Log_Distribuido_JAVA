@@ -1,2 +1,3 @@
-1;22-04-23;21:17:15;Cliente2;otra sentencia sql
-Inicio de operacion;Cliente2;22-04-23;21:16:56
+2;22-04-23;22:43:59;Cliente2;Sami>Tobi
+1;22-04-23;22:43:46;Cliente2;Select * from tobi
+Inicio de operacion;Cliente2;22-04-23;22:43:10
