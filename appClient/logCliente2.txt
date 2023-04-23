@@ -1,0 +1,2 @@
+1;22-04-23;21:17:15;Cliente2;otra sentencia sql
+Inicio de operacion;Cliente2;22-04-23;21:16:56
