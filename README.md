@@ -1,7 +1,18 @@
+## Sistema de logs distribuido
 
-Para ejecutar este sistema debe
+### **Como funciona**:
+**Slave nodes:** Una vez iniciados, estos envían las peticiones hechas al servidor master. Como "Extra", también crean un archivo llamado *logClientX.txt*, donde se guardan los logs de la última inicialización del nodo.
 
-1) crear los .class de caha ejemplo creado en java, puede hacerlo ejecutando.
+
+**Master node:** Una vez iniciado, recibe las peticiones de los slave nodes y va creando en modo "Streaming" un archivo llamado *logMaster.txt*, donde se guardan todos los logs de los nodos esclavos, así mismo, la hora-fecha en que iniciaron y la hora-fecha en que terminaron.
+
+
+
+
+
+Para ejecutar este sistema debe:
+
+1) crear los .class de cada ejemplo creado en java, puede hacerlo ejecutando.
 
 ```
 cd appServer
@@ -56,11 +67,3 @@ java ClienteChat Cliente2
 
 Nota: en este caso particular puede generar tantas instancias de "java ClienteChat xxxx" como nodos quiera simular
 
-
-
-
-
-
-OBSERVACIONES::::::::
--Si un cliente vuelve a iniciar operaciones, el log se renueva (Borra el anterior si tenia y lo reescribe), esto porque el log centralizdo
-almacena los anteriores
